@@ -35,12 +35,13 @@ function App() {
 <p>Design your custom watch online and create an unique watch that fits your style</p>
   </div>
 <div className="content_left" >
-<div className="title">Leather texture</div>
+<div className="title">Leather Type</div>
 <div className="title_secondary">Grainy</div>
 <div className="type_list">
   <div style={{backgroundColor:"brown" ,height:"60px",width:"60px"}}  className="type_list_item"></div>
   <div style={{backgroundColor:"orange" ,height:"60px",width:"60px"}}  className="type_list_item"> <img height="15px" src={checked}/></div>
- 
+  <div style={{backgroundColor:"gray" ,height:"60px",width:"60px"}}  className="type_list_item"></div>
+
 </div>
 
 </div>
@@ -66,7 +67,7 @@ function App() {
 </div>
 
 <div  className="content_right_bottom"> 
-<h3>$ 300</h3>
+<h3> £300.00</h3>
 <button> ADD TO CART </button>
 
 </div>
