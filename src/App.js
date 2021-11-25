@@ -17,7 +17,7 @@ function App() {
         },
         {
           matName: "Metal",
-          textures: [""],
+          textures: [],
           colors: ["red", "black", "blue"]
         },
       ],
@@ -27,7 +27,7 @@ function App() {
       matieres: [
         {
           matName: "Metal",
-          textures: [""],
+          textures: [],
           colors: ["yellow", "gray"],
         },
       ],
@@ -37,7 +37,7 @@ function App() {
       matieres: [
         {
           matName: "Numbers",
-          textures: [""],
+          textures: [],
           colors: ["yellow", "gray", "blue"],
         },
         {
@@ -48,7 +48,7 @@ function App() {
         {
           matName: "Circle",
           textures: ["Circle texture 1", "Circle texture 1", "Circle texture 1"],
-          colors: [""],
+          colors: [],
         },
       ],
     },
