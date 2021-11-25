@@ -130,18 +130,23 @@ const setInit = (i)=>{
           <button
             className="content_bottom_button"
             onClick={() =>setInit(0)}
+            style={{background:activePiece == 0? "black" : null}}
           >
-            Centure
+            Bracelet
           </button>
           <button
             className="content_bottom_button"
             onClick={() => setInit(1)}
+            style={{background:activePiece == 1? "black" : null}}
+
           >
-            dora
+            Box
           </button>
           <button
             className="content_bottom_button"
             onClick={() => setInit(2)}
+            style={{background:activePiece == 2? "black" : null}}
+
           >
             Dial
           </button>
