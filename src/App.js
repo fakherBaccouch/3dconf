@@ -11,12 +11,12 @@ function App() {
       piece: "Bracelet",
       matieres: [
         {
-          matName: "Leather",
+          matName: "Leather icon",
           textures: ["Tunsian leather", "Italian leather"],
           colors: ["red", "yellow", "blue"]
         },
         {
-          matName: "Metal",
+          matName: "Metal icon",
           textures: [],
           colors: ["red", "black", "blue"]
         },
@@ -26,7 +26,7 @@ function App() {
       piece: "Watch virlce",
       matieres: [
         {
-          matName: "Metal",
+          matName: "Metal icon",
           textures: [],
           colors: ["yellow", "gray"],
         },
@@ -36,17 +36,17 @@ function App() {
       piece: "Dial",
       matieres: [
         {
-          matName: "Numbers",
+          matName: "Numbers icon",
           textures: [],
           colors: ["yellow", "gray", "blue"],
         },
         {
-          matName: "Rings",
+          matName: "Rings icon",
           textures: [],
           colors: ["yellow", "gray", "blue"],
         },
         {
-          matName: "Circle",
+          matName: "Circle icon",
           textures: ["Circle texture 1", "Circle texture 1", "Circle texture 1"],
           colors: [],
         },
@@ -79,12 +79,13 @@ const setInit = (i)=>{
           </p>
         </div>
         <div className="content_left">
-          <h3 style={{ borderBottom: "20px" }}>Les Matieres :</h3>
+          <div  className="content_left_top" style={{ borderBottom: "20px" }}>Les Matieres :</div>
           {watch[activePiece].matieres.map((m, i) => {
             return (
               <div
-                style={{ color: activeMat == i ? "orange" : null ,cursor:"pointer",margin:"8px 0"}}
+                style={{ border: activeMat == i ? "1.5px solid grey" : null ,cursor:"pointer"}}
                 onClick={() => setActiveMat(i)}
+                className="mat_box"
               >
                 {m.matName}{" "}
               </div>
@@ -93,7 +94,7 @@ const setInit = (i)=>{
         </div>
         <div className="content_right">
           <div>
-            <div className="title">Coleur</div>
+            {watch[activePiece].matieres[activeMat].colors.length > 0 && <div className="title">Coleur</div>}
             {/* <div className="title_secondary">Aqua blue</div> */}
             <div className="type_list">
               {watch[activePiece].matieres[activeMat].colors && watch[activePiece].matieres[activeMat].colors.map((c) => {
@@ -107,7 +108,7 @@ const setInit = (i)=>{
             </div>
           </div>
           <div>
-            <div className="title">Textures</div>
+          {watch[activePiece].matieres[activeMat].textures.length > 0 && <div className="title">Textures</div>}
             {/* <div className="title_secondary">Aqua blue</div> */}
             <div className="type_list">
               {watch[activePiece].matieres[activeMat].textures?.map((t) => {
