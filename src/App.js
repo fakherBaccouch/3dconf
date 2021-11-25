@@ -8,11 +8,11 @@ import brac from "./images/belt.png";
 function App() {
   const [watch, setWatch] = React.useState([
     {
-      piece: "centure",
+      piece: "Bracelet",
       matieres: [
         {
-          matName: "leather",
-          textures: ["jeld tounes", "jeld suisse"],
+          matName: "Leather",
+          textures: ["Tunsian leather", "Italian leather"],
           colors: ["red", "yellow", "blue"]
         },
         {
@@ -23,31 +23,31 @@ function App() {
       ],
     },
     {
-      piece: "dora",
+      piece: "Watch virlce",
       matieres: [
         {
-          matName: "metal",
+          matName: "Metal",
           textures: [""],
           colors: ["yellow", "gray"],
         },
       ],
     },
     {
-      piece: "dial",
+      piece: "Dial",
       matieres: [
         {
-          matName: "numbers",
+          matName: "Numbers",
           textures: [""],
           colors: ["yellow", "gray", "blue"],
         },
         {
-          matName: "akaréb",
+          matName: "Rings",
           textures: [],
           colors: ["yellow", "gray", "blue"],
         },
         {
-          matName: "dora westania",
-          textures: ["txt dora1", "txt dora1", "txt dora1"],
+          matName: "Circle",
+          textures: ["Circle texture 1", "Circle texture 1", "Circle texture 1"],
           colors: [""],
         },
       ],
@@ -79,11 +79,11 @@ const setInit = (i)=>{
           </p>
         </div>
         <div className="content_left">
-          <h3 style={{ borderBottom: "20px" }}>Les Matieres</h3>
+          <h3 style={{ borderBottom: "20px" }}>Les Matieres :</h3>
           {watch[activePiece].matieres.map((m, i) => {
             return (
               <div
-                style={{ border: activeMat == i ? "2px solid black" : null }}
+                style={{ color: activeMat == i ? "orange" : null ,cursor:"pointer",margin:"8px 0"}}
                 onClick={() => setActiveMat(i)}
               >
                 {m.matName}{" "}
