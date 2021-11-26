@@ -155,12 +155,8 @@ background: black;
 }
 
 .mat_box{
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin:  12px  !important;
+
+  margin:  12px 0 !important;
 }
 .bottom-navigation {
   display: flex;

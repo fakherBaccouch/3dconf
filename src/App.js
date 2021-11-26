@@ -82,11 +82,11 @@ const setInit = (i,l)=>{
           </p>
         </div>
         <div className="content_left">
-          <div  className="content_left_top" style={{ borderBottom: "20px",padding:"0 4%" }}>Les Matieres </div>
+          <div  className="content_left_top title" style={{ borderBottom: "20px",padding:"0 4%" }}>Matieres </div>
           {watch[activePiece].matieres.map((m, i) => {
             return (
               <div
-                style={{ border: activeMat == i ? "1.5px solid grey" : null ,cursor:"pointer"}}
+                style={{ color: activeMat == i ? "orange" : null ,cursor:"pointer"}}
                 onClick={() => setActiveMat(i)}
                 className="mat_box"
               >
