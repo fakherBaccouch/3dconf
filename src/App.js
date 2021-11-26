@@ -6,6 +6,8 @@ import checked from "./images/checked.png";
 import brac from "./images/belt.png";
 
 function App() {
+  const [left, setLeft] = React.useState(60)
+
   const [watch, setWatch] = React.useState([
     {
       piece: "Bracelet",
@@ -23,7 +25,7 @@ function App() {
       ],
     },
     {
-      piece: "Watch virlce",
+      piece: "Watch Cirlce",
       matieres: [
         {
           matName: "Metal icon",
@@ -55,9 +57,10 @@ function App() {
   ]);
   const [activePiece, setActivePiece] = React.useState(0);
   const [activeMat, setActiveMat] = React.useState(0);
-const setInit = (i)=>{
+const setInit = (i,l)=>{
   setActiveMat(0);
   setActivePiece(i)
+  setLeft(l)
 }
   return (
     <div className="App">
@@ -128,30 +131,15 @@ const setInit = (i)=>{
           <button> ADD TO CART </button>
         </div>
         <div className="content_bottom">
-          <button
-            className="content_bottom_button"
-            onClick={() =>setInit(0)}
-            style={{background:activePiece == 0? "black" : null}}
-          >
-            Bracelet
-          </button>
-          <button
-            className="content_bottom_button"
-            onClick={() => setInit(1)}
-            style={{background:activePiece == 1? "black" : null}}
+        <div className="bottom-navigation">
+  <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} >Bracelet</div>
+  <div onClick={()=>setInit(1,180)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
+  <div onClick={()=>setInit(2,300)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
+  <span style={{left:left}} className="nav-indicator"></span>
+</div>
 
-          >
-            Box
-          </button>
-          <button
-            className="content_bottom_button"
-            onClick={() => setInit(2)}
-            style={{background:activePiece == 2? "black" : null}}
-
-          >
-            Dial
-          </button>
         </div>
+        
       </div>
     </div>
   );
