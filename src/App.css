@@ -203,5 +203,9 @@ background: black;
   height: 65%;
   z-index: 1;
   width:180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10px;
 }
 

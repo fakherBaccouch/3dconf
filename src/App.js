@@ -132,10 +132,10 @@ const setInit = (i,l)=>{
         </div>
         <div className="content_bottom">
         <div className="bottom-navigation">
-  <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} > <div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div>Bracelet</div>
+  <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} > Bracelet</div>
   <div onClick={()=>setInit(1,240)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
   <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
-  <span style={{left:left}} className="nav-indicator"></span>
+  <span style={{left:left}} className="nav-indicator"><div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
 </div>
 
         </div>
