@@ -82,7 +82,7 @@ const setInit = (i,l)=>{
           </p>
         </div>
         <div className="content_left">
-          <div  className="content_left_top" style={{ borderBottom: "20px" }}>Les Matieres :</div>
+          <div  className="content_left_top" style={{ borderBottom: "20px",padding:"0 4%" }}>Les Matieres </div>
           {watch[activePiece].matieres.map((m, i) => {
             return (
               <div
