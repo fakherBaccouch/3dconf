@@ -10,25 +10,25 @@ function App() {
 
   const [watch, setWatch] = React.useState([
     {
-      piece: "Bracelet",
+      piece: "Strap",
       matieres: [
         {
-          matName: "Leather icon",
-          textures: ["Tunsian leather", "Italian leather"],
+          matName: "Leather",
+          textures: ["Flat Grain", "Pebbled","Embossed"],
           colors: ["red", "yellow", "blue"]
         },
         {
-          matName: "Metal icon",
+          matName: "Metal",
           textures: [],
           colors: ["red", "black", "blue"]
         },
       ],
     },
     {
-      piece: "Watch Cirlce",
+      piece: "Case",
       matieres: [
         {
-          matName: "Metal icon",
+          matName: "Metal",
           textures: [],
           colors: ["yellow", "gray"],
         },
@@ -38,18 +38,18 @@ function App() {
       piece: "Dial",
       matieres: [
         {
-          matName: "Numbers icon",
+          matName: "Marker",
           textures: [],
           colors: ["yellow", "gray", "blue"],
         },
         {
-          matName: "Rings icon",
+          matName: "Hand",
           textures: [],
           colors: ["yellow", "gray", "blue"],
         },
         {
-          matName: "Circle icon",
-          textures: ["Circle texture 1", "Circle texture 1", "Circle texture 1"],
+          matName: "Dial",
+          textures: ["Dial texture 1", "Dial texture 2", "Dial texture 2"],
           colors: [],
         },
       ],
