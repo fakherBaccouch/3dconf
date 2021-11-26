@@ -110,10 +110,10 @@ const setInit = (i,l)=>{
               })}
             </div>
           </div>
-          <div>
+          <div >
           {watch[activePiece].matieres[activeMat].textures.length > 0 && <div className="title">Textures</div>}
             {/* <div className="title_secondary">Aqua blue</div> */}
-            <div className="type_list">
+            <div style={{marginLeft:"25px"}} className="type_list">
               {watch[activePiece].matieres[activeMat].textures?.map((t) => {
                 return (
                   <div style={{ width: "100%" }}>
@@ -132,9 +132,9 @@ const setInit = (i,l)=>{
         </div>
         <div className="content_bottom">
         <div className="bottom-navigation">
-  <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} >Bracelet</div>
-  <div onClick={()=>setInit(1,240)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
-  <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
+  <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} > <div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div>Bracelet</div>
+  <div onClick={()=>setInit(1,240)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} ><div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div>Cirlce</div>
+  <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} ><div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div>Dial</div>
   <span style={{left:left}} className="nav-indicator"></span>
 </div>
 

@@ -61,7 +61,7 @@ nav ul li {
   left: 0;
   top: 20%;
   border-radius: 2px;
-  margin: 0 0 0 40px;
+  margin-left:  200px;
   width: fit-content;
 }
 .content_left_top{
@@ -174,7 +174,7 @@ background: black;
   
 }
 .nav-item {
-  padding: 0 0;
+  padding: 0 10px;
   text-decoration: none;
   transition: .3s;
   font-size: 1.4rem;
@@ -185,6 +185,9 @@ background: black;
   font-weight: 500;
   cursor: pointer;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
