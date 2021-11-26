@@ -73,16 +73,11 @@ const setInit = (i,l)=>{
           <li>Contact us</li>
         </ul>
       </nav>
-      <div className="content">
-        <div className="content_text">
-          <h1>Personaliser</h1>
-          <p>
-            Design your custom watch online and create an unique watch that fits
-            your style
-          </p>
-        </div>
+      <div className="content"> 
+     
+        <div className="ligne2" >
         <div className="content_left">
-          <div  className="content_left_top title" style={{ borderBottom: "20px",padding:"0 4%" }}>Matieres </div>
+          <div  className=" title" style={{ borderBottom: "20px",padding:"0 4%" }}>Matieres </div>
           {watch[activePiece].matieres.map((m, i) => {
             return (
               <div
@@ -94,6 +89,9 @@ const setInit = (i,l)=>{
               </div>
             );
           })}
+        </div>
+        <div className="content_middle">
+
         </div>
         <div className="content_right">
           <div>
@@ -125,11 +123,10 @@ const setInit = (i,l)=>{
             </div>
           </div>
         </div>
-
-        <div className="content_right_bottom">
-          <h3> £300.00</h3>
-          <button> ADD TO CART </button>
         </div>
+        <div className="ligne3" >
+
+        
         <div className="content_bottom">
         <div className="bottom-navigation">
   <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} > Bracelet</div>
@@ -138,6 +135,11 @@ const setInit = (i,l)=>{
   <span style={{left:left}} className="nav-indicator"><div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
 </div>
 
+        </div>
+        <div className="content_right_bottom">
+          <h3> £300.00</h3>
+          <button> ADD TO CART </button>
+        </div>
         </div>
         
       </div>
