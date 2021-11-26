@@ -15,12 +15,12 @@ function App() {
         {
           matName: "Leather",
           textures: ["Flat Grain", "Pebbled","Embossed"],
-          colors: ["red", "yellow", "blue"]
+          colors: ['#161a1c', 'red' ,'#7c918d', '#bab0a4']
         },
         {
           matName: "Metal",
           textures: [],
-          colors: ["red", "black", "blue"]
+          colors: ['#161a1c', '#838381' ,'#7c918d', '#b0182c', '#bab0a4']
         },
       ],
     },
@@ -30,7 +30,7 @@ function App() {
         {
           matName: "Metal",
           textures: [],
-          colors: ["yellow", "gray"],
+          colors: ["silver", "gold"],
         },
       ],
     },
@@ -40,12 +40,12 @@ function App() {
         {
           matName: "Marker",
           textures: [],
-          colors: ["yellow", "gray", "blue"],
+          colors: ['#161a1c', '#838381' ,'#7c918d', '#b0182c', '#bab0a4'],
         },
         {
           matName: "Hand",
           textures: [],
-          colors: ["yellow", "gray", "blue"],
+          colors: ['#838381', "#64485a", '#b0182c'],
         },
         {
           matName: "Dial",
