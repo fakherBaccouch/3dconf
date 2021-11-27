@@ -78,17 +78,19 @@ const setInit = (i,l)=>{
         <div className="ligne2" >
         <div className="content_left">
           <div  className=" title" style={{ borderBottom: "20px",padding:"0 4%" }}>Matieres </div>
+          <div className="type_list">
           {watch[activePiece].matieres.map((m, i) => {
             return (
               <div
                 style={{ color: activeMat == i ? "orange" : null ,cursor:"pointer"}}
                 onClick={() => setActiveMat(i)}
-                className="mat_box"
+                className="type_list_texture"
               >
-                {m.matName}{" "}
+   {m.matName}{" "} 
               </div>
             );
           })}
+          </div>
         </div>
         <div className="content_middle">
 
@@ -114,9 +116,8 @@ const setInit = (i,l)=>{
             <div style={{marginLeft:"25px"}} className="type_list">
               {watch[activePiece].matieres[activeMat].textures?.map((t) => {
                 return (
-                  <div style={{ width: "100%" }}>
+                  <div className="type_list_texture">
                     <h4 style={{ color: "gray" }}>{t}</h4>
-                    <br></br>
                   </div>
                 );
               })}
@@ -134,8 +135,16 @@ const setInit = (i,l)=>{
   <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
   <span style={{left:left}} className="nav-indicator"><div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
 </div>
+<div className="bottom-navigation-responsive">
+  <div  onClick={()=>setInit(0,10)} className="nav-item " style={{color:"white !important"}} > Bracelet</div>
+  <div onClick={()=>setInit(1,125)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
+  <div onClick={()=>setInit(2,230)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
+  <span style={{left:left}} className="nav-indicator"><div style={{height:"8px",width:'8px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
+</div>
+
 
         </div>
+        
         <div className="content_right_bottom">
           <h3> £300.00</h3>
           <button> ADD TO CART </button>
