@@ -86,14 +86,14 @@ const setInit = (i,l)=>{
           {watch[activePiece].matieres.map((m, i) => {
             return (
               <div
-                style={{ color: activeMat == i ? "orange" : null ,cursor:"pointer"}}
+                style={{ color: activeMat === i ? "orange" : null ,cursor:"pointer"}}
                 onClick={() => setActiveMat(i)}
                 className="type_list_texture"
               >
                 {
                   
                 }
-               <div className="flex-c-c"> <img width='50px' height='auto' src={m.matName == "hand"? hand : m.matName == "dial"? dial:m.matName == "marker" ? marker:m.matName == "Metal" ? metal : m.matName == "Leather"?leather:case_Metal}  /> {m.matName}{" "} </div>
+               <div className="flex-c-c"> <img width='50px' height='auto' src={m.matName === "hand"? hand : m.matName === "dial"? dial:m.matName === "marker" ? marker:m.matName === "Metal" ? metal : m.matName === "Leather"?leather:case_Metal}  /> {m.matName}{" "} </div>
               
               
               </div>
@@ -104,8 +104,8 @@ const setInit = (i,l)=>{
         <div className="content_middle">
         <div className="bottom-navigation-responsive ">
   <div  onClick={()=>setInit(0,10)} className="nav-item " style={{color:"white !important"}} > Bracelet</div>
-  <div onClick={()=>setInit(1,125)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
-  <div onClick={()=>setInit(2,230)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
+  <div onClick={()=>setInit(1,125)} className="nav-item" style={{color:activePiece === 1 ? "white !important":null}} >Cirlce</div>
+  <div onClick={()=>setInit(2,230)} className="nav-item" style={{color:activePiece === 2 ? "black !important":"white !important"}} >Dial</div>
   <span style={{left:left}} className="nav-indicator"><div style={{height:"8px",width:'8px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
 </div>
         </div>
@@ -145,8 +145,8 @@ const setInit = (i,l)=>{
         <div className="content_bottom">
         <div className="bottom-navigation">
   <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} > {watch[0].piece}</div>
-  <div onClick={()=>setInit(1,240)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >{watch[1].piece}</div>
-  <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >{watch[2].piece}</div>
+  <div onClick={()=>setInit(1,240)} className="nav-item" style={{color:activePiece === 1 ? "white !important":null}} >{watch[1].piece}</div>
+  <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece === 2 ? "black !important":"white !important"}} >{watch[2].piece}</div>
   <span style={{left:left}} className="nav-indicator"><div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
 </div>
 
