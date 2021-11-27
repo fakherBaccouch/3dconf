@@ -4,6 +4,9 @@ import React from "react";
 import leather from "./images/leather.svg";
 import checked from "./images/checked.png";
 import brac from "./images/belt.png";
+import hand from "./images/hand.png"
+import marker from "./images/marker.png"
+import dial from "./images/dial.png"
 
 function App() {
   const [left, setLeft] = React.useState()
@@ -38,17 +41,17 @@ function App() {
       piece: "Dial",
       matieres: [
         {
-          matName: "Marker",
+          matName: "marker",
           textures: [],
           colors: ['#161a1c', '#838381' ,'#7c918d', '#b0182c', '#bab0a4'],
         },
         {
-          matName: "Hand",
+          matName: "hand",
           textures: [],
           colors: ['#838381', "#64485a", '#b0182c'],
         },
         {
-          matName: "Dial",
+          matName: "dial",
           textures: ["Dial texture 1", "Dial texture 2", "Dial texture 2"],
           colors: [],
         },
@@ -86,7 +89,13 @@ const setInit = (i,l)=>{
                 onClick={() => setActiveMat(i)}
                 className="type_list_texture"
               >
-   {m.matName}{" "} 
+                {watch[activePiece].piece == "Dial" ?
+                
+               <div className="flex-c-c"> <img width='60px' height='auto' src={m.matName == "hand"? hand : m.matName == "dial"? dial:marker}  /> {m.matName}{" "} </div>
+               :  <>   {m.matName}{" "} </>
+
+              
+              }
               </div>
             );
           })}
