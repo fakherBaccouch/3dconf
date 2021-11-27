@@ -222,7 +222,7 @@ background: black;
 .content_middle{
   width: 90%;
   height: 100%;
-  background-image: url("./images/bgbgbg.png");
+  background: gray;
   /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center;
@@ -250,11 +250,10 @@ margin: 0  0;
   
 }
 .content_right{
-  margin: 0 0 20px 0;
-  min-height: 200px;
+  margin: 0 0 12px 0;
 }
 .content_left{
-  margin: 0 0 20px 0;
+  margin: 0 0 12px 0;
 }
 .content_middle{
   height: 50vh;
@@ -280,6 +279,9 @@ nav{
 .content_right_bottom{
   display: none;
 }
+.content{
+  height: auto;
+}
 }
 @media only screen and (max-width: 700px) {
 .bottom-navigation-responsive{
@@ -292,6 +294,12 @@ nav{
 .nav-item{
   width: 110px;
   font-size: 1rem;
+}
+.title{
+  margin: 4px 0 4px 0;
+}
+.content_middle{
+  height: 40vh;
 }
 .bottom-navigation{
   display: none;
