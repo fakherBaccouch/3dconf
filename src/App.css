@@ -227,7 +227,9 @@ background: black;
   width: 90%;
   height: 100%;
   background: #ccc;
+  background-image: url("./images/secondBg.png");
   /* background-size: contain; */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -258,7 +260,7 @@ margin: 0  0;
   height: auto
 }
 .content_left{
-  margin: 0 0 12px 0;
+  margin: 12px 0 12px 0;
   height: auto;
 
 }

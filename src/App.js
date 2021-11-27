@@ -1,12 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import leather from "./images/leather.svg";
 import checked from "./images/checked.png";
 import brac from "./images/belt.png";
 import hand from "./images/hand.png"
 import marker from "./images/marker.png"
 import dial from "./images/dial.png"
+import leather from "./images/leather.png"
+import metal from "./images/Metal.png"
+import case_Metal from "./images/case_Metal.png"
 
 function App() {
   const [left, setLeft] = React.useState()
@@ -31,7 +33,7 @@ function App() {
       piece: "Case",
       matieres: [
         {
-          matName: "Metal",
+          matName: "Case Metal",
           textures: [],
           colors: ["silver", "gold"],
         },
@@ -80,7 +82,6 @@ const setInit = (i,l)=>{
      
         <div className="ligne2" >
         <div className="content_left">
-          <div  className=" title" style={{ borderBottom: "20px",padding:"0 4%" }}>Matieres </div>
           <div className="type_list">
           {watch[activePiece].matieres.map((m, i) => {
             return (
@@ -89,13 +90,12 @@ const setInit = (i,l)=>{
                 onClick={() => setActiveMat(i)}
                 className="type_list_texture"
               >
-                {watch[activePiece].piece == "Dial" ?
-                
-               <div className="flex-c-c"> <img width='60px' height='auto' src={m.matName == "hand"? hand : m.matName == "dial"? dial:marker}  /> {m.matName}{" "} </div>
-               :  <>   {m.matName}{" "} </>
-
+                {
+                  
+                }
+               <div className="flex-c-c"> <img width='50px' height='auto' src={m.matName == "hand"? hand : m.matName == "dial"? dial:m.matName == "marker" ? marker:m.matName == "Metal" ? metal : m.matName == "Leather"?leather:case_Metal}  /> {m.matName}{" "} </div>
               
-              }
+              
               </div>
             );
           })}
