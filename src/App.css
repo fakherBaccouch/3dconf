@@ -6,6 +6,7 @@
   background-size: auto;
   background-repeat: no-repeat;
   display: flex;
+  user-select: none;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
@@ -178,6 +179,7 @@ background: black;
   align-items: center;
   justify-content: flex-start;
   padding: 0 10px;
+  left: 60px;
 }
 /* @media only screen and (max-width: 1007px) {
 
@@ -296,6 +298,7 @@ nav{
 }
 .nav-indicator{
   width: 110px;
+  left: 10px ;
 }
 .nav-item{
   width: 110px;

@@ -6,7 +6,7 @@ import checked from "./images/checked.png";
 import brac from "./images/belt.png";
 
 function App() {
-  const [left, setLeft] = React.useState(60)
+  const [left, setLeft] = React.useState()
 
   const [watch, setWatch] = React.useState([
     {
@@ -93,7 +93,7 @@ const setInit = (i,l)=>{
           </div>
         </div>
         <div className="content_middle">
-        <div className="bottom-navigation-responsive">
+        <div className="bottom-navigation-responsive ">
   <div  onClick={()=>setInit(0,10)} className="nav-item " style={{color:"white !important"}} > Bracelet</div>
   <div onClick={()=>setInit(1,125)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
   <div onClick={()=>setInit(2,230)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
