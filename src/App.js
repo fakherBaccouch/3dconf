@@ -54,7 +54,7 @@ function App() {
         },
         {
           matName: "dial",
-          textures: ["Dial texture 1", "Dial texture 2", "Dial texture 2"],
+          textures: ["Dial texture 1", "Dial texture 2", "Dial texture 3"],
           colors: [],
         },
       ],
@@ -144,9 +144,9 @@ const setInit = (i,l)=>{
         
         <div className="content_bottom">
         <div className="bottom-navigation">
-  <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} > Bracelet</div>
-  <div onClick={()=>setInit(1,240)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
-  <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
+  <div  onClick={()=>setInit(0,60)} className="nav-item " style={{color:"white !important"}} > {watch[0].piece}</div>
+  <div onClick={()=>setInit(1,240)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >{watch[1].piece}</div>
+  <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >{watch[2].piece}</div>
   <span style={{left:left}} className="nav-indicator"><div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
 </div>
 
