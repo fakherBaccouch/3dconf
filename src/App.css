@@ -62,6 +62,7 @@ nav ul li {
   width: auto;
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 20px;
@@ -295,6 +296,8 @@ nav{
 .bottom-navigation{
   display: none;
 }
-
+.type_list{
+  flex-wrap: nowrap;
+}
 
 }
