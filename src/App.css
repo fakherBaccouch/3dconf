@@ -139,6 +139,8 @@ background: black;
   align-items: center;
   justify-content: space-around;
   height: 64px; 
+  top: 100%;
+  transform: translateY(-110%);
 }
 .nav-item {
   padding: 0 10px;

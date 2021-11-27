@@ -93,7 +93,12 @@ const setInit = (i,l)=>{
           </div>
         </div>
         <div className="content_middle">
-
+        <div className="bottom-navigation-responsive">
+  <div  onClick={()=>setInit(0,10)} className="nav-item " style={{color:"white !important"}} > Bracelet</div>
+  <div onClick={()=>setInit(1,125)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
+  <div onClick={()=>setInit(2,230)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
+  <span style={{left:left}} className="nav-indicator"><div style={{height:"8px",width:'8px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
+</div>
         </div>
         <div className="content_right">
           <div>
@@ -135,12 +140,7 @@ const setInit = (i,l)=>{
   <div onClick={()=>setInit(2,420)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
   <span style={{left:left}} className="nav-indicator"><div style={{height:"15px",width:'15px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
 </div>
-<div className="bottom-navigation-responsive">
-  <div  onClick={()=>setInit(0,10)} className="nav-item " style={{color:"white !important"}} > Bracelet</div>
-  <div onClick={()=>setInit(1,125)} className="nav-item" style={{color:activePiece == 1 ? "white !important":null}} >Cirlce</div>
-  <div onClick={()=>setInit(2,230)} className="nav-item" style={{color:activePiece == 2 ? "black !important":"white !important"}} >Dial</div>
-  <span style={{left:left}} className="nav-indicator"><div style={{height:"8px",width:'8px',borderRadius:"50%",backgroundColor:"white"}}></div></span>
-</div>
+
 
 
         </div>
