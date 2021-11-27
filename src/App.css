@@ -226,7 +226,6 @@ background: black;
 .content_middle{
   width: 90%;
   height: 100%;
-  background: #ccc;
   background-image: url("./images/secondBg.png");
   background-size: contain;
   background-repeat: no-repeat;
