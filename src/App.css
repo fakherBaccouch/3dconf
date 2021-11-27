@@ -222,7 +222,7 @@ background: black;
 .content_middle{
   width: 90%;
   height: 100%;
-  background: gray;
+  background: #ccc;
   /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center;
